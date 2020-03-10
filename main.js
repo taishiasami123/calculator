@@ -31,10 +31,10 @@ div.onclick = () => {
   const num1 = parseFloat(document.getElementById("num1").value);
   const num2 = parseFloat(document.getElementById("num2").value);
   const result = document.getElementById("result");
-  calResult = num1 / num2;
   if (num2 == 0) {
     result.innerHTML = "<span style='color: red'>0で割ることはできません！</span>"
   } else {
+    calResult = num1 / num2;
     result.innerHTML = calResult;
   }
 }
